@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: system-ui, sans-serif;
+  background: #f4f1ec;
+  color: #222;
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search input {
+  flex: 1;
+}
+
+input,
+button {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  background: #222;
+  color: #fff;
+  border-color: #222;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.break-it {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.break-it button {
+  background: #fff;
+  color: #222;
+  border-color: #ccc;
+  font-size: 14px;
+}
+
+.status {
+  margin: 20px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Added by JavaScript when something goes wrong */
+.status.error {
+  background: #fde8e8;
+  color: #a12020;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card h2 {
+  margin: 16px 16px 4px;
+}
+
+.card p {
+  margin: 0 16px 16px;
+  color: #666;
+}

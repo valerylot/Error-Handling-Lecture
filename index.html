@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Error Handling</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Find a Character</h1>
+
+      <form id="search-form" class="search">
+        <input id="search-input" type="text" placeholder="Enter an ID (1 to 826)" />
+        <button id="search-button">Search</button>
+      </form>
+
+      <!-- Buttons that break on purpose -->
+      <div class="break-it">
+        <button id="good-button" type="button">Good request</button>
+        <button id="404-button" type="button">Bad ID (404)</button>
+        <button id="network-button" type="button">Bad URL (network)</button>
+      </div>
+
+      <!-- Loading / error messages go here -->
+      <p id="status" class="status">Search for a character.</p>
+
+      <!-- JavaScript fills this with a character card -->
+      <section id="result"></section>
+    </main>
+
+    <!-- type="module" lets script.js import from api.js -->
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
